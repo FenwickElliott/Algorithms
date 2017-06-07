@@ -1,0 +1,21 @@
+1. Linear search for 'G' in alphaebet would take 7 iterations.
+2. Binary search for 'G' in alphaebet would either take 2 or 4 iterations depending on whether the median cell was rounded up or down when a sub array is of an even number.
+3. fib(10) = 55, fib(11) = 89, fib(12) = 144
+
+running a benchmark measure of:
+
+    puts Benchmark.measure {
+    for i in 0..40
+        puts i
+        fib(i)
+        end
+    }
+
+returned:
+
+linear: 0.000287 seconds
+recusive: 40.745387 seconds
+
+
+1. Binary searches do not function on unsorted data so unsorted data sets should be searched with linear searches
+2. Binary searches are much more efficient (on averavge) than linear searches when called on sorted data so sorted data should be searched with binary searches.

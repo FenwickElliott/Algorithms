@@ -1,12 +1,12 @@
 require 'benchmark'
 
 def fib(n)
-    f = [1,1]
-    for i in 2..n
-        f << f[-2] + f[-1]
-    end
-    f[n]
-end
+   if (n == 0 || n == 1)
+     return 1
+   else
+     return fib(n-1) + fib(n-2)
+   end
+ end
 
 
  puts Benchmark.measure {
