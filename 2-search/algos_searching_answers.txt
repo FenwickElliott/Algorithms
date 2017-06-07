@@ -19,3 +19,16 @@ recusive: 40.745387 seconds
 
 1. Binary searches do not function on unsorted data so unsorted data sets should be searched with linear searches
 2. Binary searches are much more efficient (on averavge) than linear searches when called on sorted data so sorted data should be searched with binary searches.
+The difference in performance between iterative and recusive binary searches was mirginal but the iterative performed better. The results were as follows:
+
+
+puts Benchmark.measure {
+    10000.times do 
+        for i in 97..122
+            puts search(alphabet,i.chr)
+        end
+    end
+}
+
+iterative: 1.177067 seconds
+recusive: 1.389917 seconds
