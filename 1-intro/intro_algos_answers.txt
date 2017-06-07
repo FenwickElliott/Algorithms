@@ -1,0 +1,37 @@
+1. Calculate Tip:
+
+GET cheque_value
+MULTIPLY checque_value by 1.2
+IF comped_items
+    MULTIPLY value_of comped_items by 0.25
+    ADD value_of comped_items TO checque_value
+PAY checque_value
+
+2. Make Coffee:
+
+TURN ON coffee_machine UNLESS coffee_machine IS ON
+WHILE coffee_machine IS NOT hot WAIT
+GRIND coffee
+EMPTY portafilter IF portafilter IS NOT empty
+ADD coffee TO portafilter
+BREW
+
+3. Dry Martini
+
+ADD ice TO glass
+Add soda_water TO glass
+
+ADD ice TO stiring_jar
+MEASURE gin TO 0.8 times volume_of glass
+ADD measure_of_gin TO stiring_jar
+UNTIL condensate has_formed on outside of stiring_jar
+    stir
+END
+EMPTY glass
+ADD dash of vermouth TO glass
+UNTIL inside of glass is coated
+    swirl
+END
+EMPTY glass
+STRAIN measure_of_gin inTO glass
+ADD garnish
