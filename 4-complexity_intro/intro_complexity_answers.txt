@@ -1,0 +1,21 @@
+1. As n grows the inefficiency of O(1) remains constant and that of O(2^n) explodes.
+
+2. Best case of a binary search is 1, it occurs when the first cell examined is the one searched for, usually the middle cell of the ordered array.
+
+3. Worst case bound of a binary search is lg n, each guess halves the data set. A data set can only be halved lg n times before there is only one (the searched for) cell left.
+
+4. The bounded function is between lg n and 1 for the above stated reasons.
+
+5. See graph
+
+6. The limit of 2^n as n tends toward infinity is infinity. Exponent functions rise quicker than any other discussed functions but at inifinte limits that is inconcequential.
+
+7. O(2^n)
+
+8. 8
+
+9. See graph
+
+10. O(lg n)
+11. Ω(1)
+12. Θ( between 1 and lg n )
