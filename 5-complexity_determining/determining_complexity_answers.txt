@@ -1,0 +1,6 @@
+1. O(1), Ω(1)
+2. O(n), Ω(n)
+3. O(n), n being the number of subcollections, the fact that they have been ordered into groups doesn't impact the fact that each one is processed once and only once.
+4. O(2^n), Ω(2^n) for each value of n all numbers between n and 1 must be evaluated
+5. O(n), Ω(n),
+6. O(n^2), in all cases there are at least n runs, in the worst case all cells compared to the pivot fall to the same side of it and n-1 runs must be made n times
