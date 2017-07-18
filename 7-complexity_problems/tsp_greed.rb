@@ -13,17 +13,21 @@ def gready_seller(n)
 
     for i in 0...ds.size do 
         temp = i
-        n = i
         path = []
         length = 0
 
         ds.size.times do
             path << temp
+            n = temp
+            # puts "#{path}\n\n"
             min = ds[n].max
             temp = ds[n].index(min)
+            
             ds[n].each_with_index do |cell, index|
-                if cell < min && cell != 0
-                    unless path.include? index
+                unless path.include? index
+                    # puts "comparing cell: #{cell} against min: #{min}, at index: #{index} of row: #{n}"
+                    if cell < min && cell != 0
+                        # puts "updating min to #{cell} at cell #{index}\n\n"
                         min = cell
                         temp = index
                     end
@@ -38,4 +42,4 @@ def gready_seller(n)
     puts "Best Path is #{best}"
 end
 
-gready_seller(37)
+gready_seller(5)
