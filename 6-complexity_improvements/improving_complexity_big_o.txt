@@ -1,0 +1,4 @@
+Poorly_written_ruby: n^2
+Optomized: n^2
+Improved_space: n^2
+Imporoved_time: n lg n
