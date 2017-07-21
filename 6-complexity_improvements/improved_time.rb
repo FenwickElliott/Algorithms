@@ -3,7 +3,6 @@ def improved_time(*arrays)
   sorted = []
   arrays.each do |array|
     array.each do |value|
-      puts sorted.inspect
       if sorted.empty? || value >= sorted.last
         sorted << value
       elsif value < sorted[0]
@@ -19,13 +18,10 @@ def improved_time(*arrays)
             hi = i
           end
         end
+        i += 1 if value > sorted[i]
         sorted.insert(i,value)
       end
     end
   end
   sorted
 end
-
-
-
-puts improved_time([100,1,4,2,8,6,9,0,5]).inspect
